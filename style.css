@@ -1,0 +1,605 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 100px;
+
+}
+
+body{
+    height: 100vh;
+    background-color: red;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    color: #fff;
+
+}
+
+
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  padding: 20px 50px;
+  background-color: #0a0a18;
+}
+
+
+.nav ul{
+    display: flex;
+   
+    
+}
+
+.nav ul li  {
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    /* padding: 10px ; */
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li:hover{
+   
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.topheading{
+    padding: 100px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #0a0a18;
+}
+
+.left{
+    padding: 10px 20px; 
+
+}
+.left .title{
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+}
+.left .img{
+    background-color: pink;
+    height: 400px;
+}
+.left .img img{
+    width: 100%; 
+    height: 400px;
+}
+.left .text .tit{
+    padding: 20px 15px 10px;
+}
+ .left .text .des a{
+        padding: 10px 15px ;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.808);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    
+    .left .text .des a:hover{
+        text-decoration: underline;
+    }
+.right{
+     padding: 10px 20px;
+    }
+    
+.right .title{
+        font-size: 30px;
+        padding: 15px;
+        text-align: center;
+    }
+
+.right .topnews {
+        height: 400px;
+        border: 1px solid #fff;
+        padding: 7px;
+        border-radius: 4px;
+        overflow-y: scroll;
+    }
+    .right  .news{
+        display: flex;
+    }
+    .right  .news .img  {
+        background-color: pink;
+        width: 170px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .right  .news .img img{
+        width: 170px;
+        height: 100%;
+    }
+
+.right .news .des  {
+    margin-left: 10px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: white; 
+}
+.right .news .des a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.right .news .des :hover{
+    text-decoration: underline;
+}
+.page2{
+    padding: 50px;
+    /* background-color: aqua; */
+    background-color: black;
+}
+
+    .page2 .news{
+        padding: 30px 0;
+        border-bottom: 1px solid grey;
+       
+    }
+    .page2 .news .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page2 .news .title .tr{
+        cursor: pointer;
+    }
+    
+    .page2 .news:last-child {
+        border-bottom: none;
+    }
+
+.page2 .news .newsbox{
+      display: flex;
+      flex-wrap: nowrap; 
+    overflow-x: scroll; 
+    max-height: 250px; 
+     overflow-y: hidden;
+
+}
+
+.page2 .news .newsbox::-webkit-scrollbar   {
+    height: 5px;
+    width: 2px;
+}
+.page2 .news .newsbox::-webkit-scrollbar-thumb {
+    background-color: #868383;
+    border-radius: 100px;
+}
+    .page2 .news .newsbox .newscard {
+        margin: 10px; 
+        /* width: calc(100% / 5 -20px); */
+        flex: 0 0 20%;
+      height: 250px ;
+    
+    }
+
+ .page2 .news .newsbox .newscard .img{
+    width: 100%;
+    /* background-color: pink; */
+    background-color: black;
+    height: 150px ;
+ }
+ .page2 .news .newsbox .newscard .img img{
+    width: 100%;
+    height: 100% ;
+ }
+
+ .page2 .news .newsbox .newscard .des  {
+    font-size: 15px;
+ cursor: pointer;
+ text-align: center;
+ }
+
+ .page2 .news .newsbox .newscard .des  a  {
+    color: white;
+    text-decoration: none;
+ }
+ .page2 .news .newsbox .newscard .des :hover{
+    text-decoration: underline;
+ }
+ .page2 .news .newsbox .newscard .des  a:hover {
+    text-decoration: underline;
+ }
+
+ .footer{
+    background-color: #0a0a18 ;
+    padding: 50px 50px 0; 
+    min-height: 200px;
+    width: 100%; 
+ }
+.footer .box{
+   /* background-color: blue; */
+   background-color: #0a0a18 ;
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-bottom: 100px; */
+    
+}
+  .footer .left{
+    display: flex;
+    /* grid-template-columns: 0.5fr 1fr; */
+    /* justify-content: space-around;
+    align-items: center; */
+ }
+ 
+ .footer .left .categories {
+    margin: 0px 20px 20px 0px;
+ }
+    
+  .footer .left .categories a{
+  
+    text-decoration: none;
+    color: white ;
+    width: max-content;
+    border-left: 1px solid #fff0;
+    border-right:  1px solid #fff0;
+ 
+ }
+ .footer .left .categories .m{
+    margin-bottom: 20px;
+ }
+ .footer .left .categories a:hover  {
+    border-left: 1px solid white;
+    border-right:  1px solid white;
+ }
+ 
+ .footer  .p{
+    padding-bottom: 30px;
+    font-size: 25px;
+ } 
+
+
+ .footer .contact .a{
+    margin-bottom: 20px ;
+    color: rgba(255, 255, 255, 0.61);
+ }
+
+ .footer .left .contact {
+    margin: 0px 20px 20px 20px;
+ }
+ .footer .contact .b{
+    display: flex;
+    color:white ;
+    align-items: center;
+    
+ }
+ .footer .contact .b i{
+    margin-right: 15px;
+    margin-top: 20px ;
+    margin-left: 10px;
+    font-size: 25px;
+ }
+  .footer .right {
+    /* background-color: tomato; */
+    background-color: #0a0a18;
+ }
+ 
+.footer .right .p{
+    /* background-color: yellow; */
+    background-color: #0a0a18;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.footer .right .ema{
+    display: flex ; 
+   border-radius: 5px; 
+   
+}
+   
+ .footer .right .ema input{
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 16px;
+    flex: 1;
+    
+ }
+    
+.footer .right .ema button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 400px;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 20px; 
+    cursor: pointer;
+    transition: 0.3s;
+} 
+
+
+.footer .right .ema button:hover{
+    color: #0a0a0a;
+    background-color: #fff;
+
+} 
+.footer .text{
+    text-align: center;
+    font-size: 20px;
+}
+ .mobile {
+    display: none;
+    visibility: hidden;
+ }
+ 
+@media (max-width:1024px) {
+    .right  .news .img{
+        width: 130px;
+    }
+    .right  .news .img img{
+        width: 130px;
+    }
+    .page2 .news .newsbox .newscard .img{
+        height: 120px ;
+     }
+}
+@media (max-width:870px) {
+    .right  .news .img{
+        width: 110px;
+    }
+    .right  .news .img img{
+        width: 110px;
+    }
+    .right .news .des a{
+        font-size: 12px;
+    }
+    .footer .right .ema input {
+        padding: 3px 20px;
+        flex: 1.5;
+    }
+    .footer .right .ema button {
+        padding: 5px 10px;
+       font-size: 15px;
+       flex: 0.5;
+
+}
+
+@media (max-width:805px)  {
+    .footer .right .p {
+        font-size: 20px;
+       
+    }
+}
+
+@media (max-width:768px)  {
+    .footer {
+    background-color: #0a0a18 ;
+   
+        padding: 50px 25px ;
+    }
+    .footer .right .p {
+        font-size: 15px;
+       
+    }
+    
+    
+}
+@media (max-width:700px)  {
+
+    .footer .box{
+        /* background-color: blue; */
+        background-color: #0a0a18;
+         display:flex;
+         flex-direction: column-reverse;
+         
+         
+     }
+     .bj{
+        right: 0px !important;
+        transition: 0.3s;
+     } 
+     .mobile  {
+        font-size: 35px;
+        display: block;
+        visibility: visible;
+     }
+    
+     .nav ul .bi{
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 34px;
+    
+     }
+     
+     .nav ul{
+        display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+        justify-content: flex-start;
+      
+    }
+    .nav ul li{
+        padding: 40px 0 0 10px;
+        
+    }
+    .nav ul li a{
+           color: #222;;
+    }
+  
+   .nav{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+     background-color: aqua;
+    /* background-color: #e3e6f3; */
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       
+   } 
+     .footer .right .p {
+        font-size: 25px;
+       
+    }
+    .footer .right .ema input {
+       flex: 1;
+    }
+
+ 
+     .footer .right .ema button {
+            padding: 15px 0px;
+     }
+
+
+    .footer .left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+    .left .title {
+        font-size: 30px;
+    }
+    .right .news .des a {
+        font-size: 20px;
+    }
+    .left .img {
+        height: 300px;
+    }
+    .left .img img {
+        height: 300px;
+    }
+    .left .text .des a {
+       text-align: center;
+    }
+    .left .text .tit {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:760px) {
+    .topheading{
+        display: flex;
+        flex-direction: column; 
+    }
+}
+@media (max-width:375px)  {
+    .footer .right .p {
+        font-size: 20px;
+       
+    }
+
+    .nav{
+      width: 100px;
+}
+
+@media (max-width:600px)  {
+    .newsbox .newscard .img {
+
+        height: 0%;
+    }
+}
+
+
+
+@media (max-width:453px)  {
+    .right .news .des a {
+        font-size: 15px;
+    }
+ 
+    .nav{
+        width: 200px;
+    }
+    
+    .left .img img  {
+       height: 200px;
+    }
+    .left .img  {
+    height: 200px;
+    }
+    .footer .right .p {
+        font-size: 20px;
+    }
+    
+   .page2 .news .newsbox .newscard .img img {
+    height: 80% ;
+    width:80%;
+}
+
+.page2 .news .newsbox .newscard .img img{
+    height: 80% ;
+    width: 120%;
+ }
+    
+}
+
+@media (max-width:385px)  {
+   
+    .right .news .des a {
+        font-size: 12px;
+    }
+   
+    .right  .news .img  {
+        width: 100px;
+        height: 100px;
+    }
+    .right  .news .img img{
+        width: 100px;
+        height: 100%;
+    }
+    .footer .contact .b i{
+       
+        font-size: 17px;
+     }
+     .footer .p {
+        font-size: 20px;
+     }
+     .footer .contact .a {
+        font-size: 15px;
+    }
+    .topheading {
+        padding: 100px 0px 0px 0px;
+    }
+
+}
+
+@media (max-width:320px)  {
+    .footer .p {
+        font-size: 15px;
+     }
+     .footer .contact .a {
+        font-size: 11px;
+    }
+
+    .footer .contact .b i{
+       
+        font-size: 12px;
+     }
+     .footer .left .categories .m {
+       font-size: 12px;
+    }
+   
+}
+}
+}
