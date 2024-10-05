@@ -107,7 +107,7 @@ let sps =function(data){
                         title= element.title;
                     }
                     else{
-                        // title= element.title.slice(0,100) +"..." ;
+                         title= element.title.slice(0,100) +"..." ;
                     }
                     htmls+= `<div class="newscard">
                                 <div class="img"> <img src=${element.urlToImage}></div>
@@ -128,7 +128,7 @@ let spa =function(data){
                         title= element.title;
                     }
                     else{
-                        // title= element.title.slice(0,100) +"..." ;
+                         title= element.title.slice(0,100) +"..." ;
                     }
                     html+=  ` <div class="newscard">
                     <div class="img"> <img src=${element.urlToImage}></div>
