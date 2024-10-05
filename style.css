@@ -23,7 +23,9 @@ body{
 
 }
 
-
+#close {
+    display: none;
+}
 
 .header{
     position: fixed;
@@ -413,6 +415,10 @@ color: white;
          
          
      }
+
+     /* #close{
+        display: block;
+     } */
      .bj{
         right: 0px !important;
         transition: 0.3s;
